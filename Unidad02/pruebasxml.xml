@@ -1,0 +1,84 @@
+3. A
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<agenda>
+	<entrada>
+		<!-- Faltaba la etiqueta de cierre de nombre completo -->
+		<nombre-completo>Marta Elena Tablada</nombre-completo>
+	</entrada>
+</agenda>
+
+<!-- 3.B -->
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<direccion>
+	<nombre-completo>Marta Elena Tablada</nombre-completo>
+	<calle>Avda Los Castros</calle>
+	<ciudad>Santander</ciudad>
+	<codigo-postal>39005</codigo-postal>
+	<region>Cantabria</region>
+	<pais>España</pais>
+	<tel preferente="true"> 942201363</tel>
+	<correo-e href="tabladam@unican.es@"></correo-e>
+</direccion>
+<!-- Dejar /direccion extra de última linea, cerrado la etiqueta de correo en la misma linea y puesto el cierre de nombre completo en la misma linea. Se mete todo el contenido en el bloque de direccion -->
+
+
+<!-- 3.C -->
+
+<?xml version="1.0"?>
+<padre>
+	<hijo1>
+		<nombre>Juan<apellido>Pérez</apellido></nombre>
+	</hijo1>
+	<hijo2>
+		<nombre>Luis<apellido>García</apellido></nombre>
+	</hijo2>
+</padre>
+
+<!-- Cambiar el orden de nombre apellido a apellido nombre -->
+
+<!-- 3.D -->
+
+<?xml version="1.0"?>
+<familia>
+	<hijo1>
+		<nombre>Juan</nombre>
+		<apellido>Pérez</apellido>
+	</hijo1>
+	<hijo2>
+		<nombre>Luis</nombre>
+		<apellido>García</apellido>
+	</hijo2>
+</familia>
+
+<!-- Añadido un elemento raíz que incluya ambos hijos -->
+<!-- 3.E -->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<cine>
+<pelicula>
+<titulo>Con faldas y a lo loco</titulo>
+<director>Billy Wilder</director>
+</pelicula>
+<pelicula>
+<director>Leo McCarey</director>
+<titulo>Sopa de ganso</titulo>
+</pelicula>
+<autor>barto</autor>
+</cine>
+<!-- Añadido elemento raíz -->
+
+<!-- 3.F -->
+<?xml version="1.0" encoding="UTF-8"?>
+<deportistas>
+    <deportista>
+        <deporte> Atletismo </deporte>
+        <nombre>Jesse Owens </nombre>
+    </deportista>
+    <deportista>
+        <deporte> Natacion </deporte>
+        <nombre>Mark Spitz</nombre>
+    </deportista>
+</deportistas>
+
+<!-- Cambiado las etiquetas no vacias por su cierre cuando llevan texto. 
+y se ha realizado el cierre de deportista. -->
