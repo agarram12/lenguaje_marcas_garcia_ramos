@@ -82,3 +82,32 @@
 
 <!-- Cambiado las etiquetas no vacias por su cierre cuando llevan texto. 
 y se ha realizado el cierre de deportista. -->
+
+<!-- Ejercicio 4. -->
+<?xml version="1.0" encoding="UTF-8"?>
+<mensaje>
+	<remite nombre="juan" email="juan@gmail.com"/>
+	<Destinatario nombre="pepe" email="pepe@gmail.com"/>
+	<asunto>Felicitación</asunto>
+	<parrafo>Felicidades por tu ascenso</parrafo>
+	<parrafo>Un saludo</parrafo>
+	<!-- Comentario -->
+</mensaje>
+
+<!-- Ejercicio 6. -->
+<?xml version="1.0" encoding="UTF-8"?>
+<facturas>
+	<factura num="999">
+		<cliente numero="879">
+			<nombre>José Rodriguez</nombre>
+			<telefono>910101010</telefono>
+		</cliente>
+		<datos_factura>
+			<articulo ref="101">
+				<descripcion>Placa base</descripcion>
+				<articulo>1</articulo>
+				<precio>230</precio>
+			</articulo>
+		</datos_factura>
+	</factura>
+</facturas>
