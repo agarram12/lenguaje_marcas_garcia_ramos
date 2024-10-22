@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<curriculum>
+	<datos_personales>
+		<nombre>Álvaro</nombre>
+		<apellidos>García Ramos</apellidos>
+		<fecha_nac>07/11/2006</fecha_nac>
+		<lugar_nac>Puerto Sta María</lugar_nac>
+		<nacionalidad>Español</nacionalidad>
+		<numero_id>55410044P</numero_id>
+		<nombre_archivo>Reverso</nombre_archivo>
+		<domicilio>
+			<via tipo="Calle">Calle Cervantes</via>
+			<num>20</num>
+			<piso>2</piso>
+			<puerta>B</puerta>
+			<escalera>Izquierda</escalera>
+		</domicilio>
+		<telefono tipo="móvil">687183109</telefono>
+		<telefono tipo="fijo">987186541</telefono>
+		<red_social nombre="twitter">agarram</red_social>
+		<red_social nombre="twitter">alvaro_gr_98</red_social>
+	</datos_personales>
+	<formacion_acedemica>
+		<estudio>
+			<nombre>SMR</nombre>
+			<lugar>I.E.S Trafalgar</lugar>
+			<ciudad>Barbate</ciudad>
+			<fecha_inic>22/23</fecha_inic>
+			<fecha_fin>23/24</fecha_fin>
+		</estudio>
+		<estudio>
+			<nombre>DAW</nombre>
+			<lugar>I.E.S Trafalgar</lugar>
+			<ciudad>Barbate</ciudad>
+			<fecha_inic>16/09/2024</fecha_inic>
+			<fecha_fin>20/06/2026</fecha_fin>
+		</estudio>
+		
+	</formacion_acedemica>
+</curriculum>
