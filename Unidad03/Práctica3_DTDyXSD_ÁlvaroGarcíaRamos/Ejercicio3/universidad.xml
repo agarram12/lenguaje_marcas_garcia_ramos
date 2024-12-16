@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<!DOCTYPE datos_universidad SYSTEM "./universidad.dtd">
+<datos_universidad>
+    <alumnos>
+        <alumno>
+            <dni_pasaporte>5432178P</dni_pasaporte>
+            <nombre>Antonio</nombre>
+            <primer_apellido>Ramos</primer_apellido>
+            <segundo_apellido>Cortés</segundo_apellido>
+            <fecha_nac>09/11/2000</fecha_nac>
+            <direccion>
+                <codpostal>11150</codpostal>
+                <telefonos>678954321</telefonos>
+                <correo>antonio@gmail.com</correo>
+            </direccion>
+            <matriculado>Matemáticas</matriculado>
+            <matriculado>Historia</matriculado>
+            <nota asig="Matemáticas">NT</nota>
+            <nota asig="Historia">AP</nota>
+        </alumno>
+    </alumnos>
+    <profesores>
+        <profesor>
+                <dni_pasaporte>46423454N</dni_pasaporte>
+                <pais_procedencia>Alemania</pais_procedencia>
+                <nombre>Ana</nombre>
+                <primer_apellido>Fuch</primer_apellido>
+                <segundo_apellido>Herrera</segundo_apellido>
+                <fecha_nac>06/07/1998</fecha_nac>
+                <direccion>
+                    <codpostal>28440</codpostal>
+                    <telefonos>678903211</telefonos>
+                    <correo>ana@gmail.com</correo>
+                </direccion>
+                <despacho>BC-02</despacho>
+        </profesor>
+    </profesores>
+    <asignaturas>
+        <asignatura optativa="si">
+                <codigo>1</codigo>
+                <creditos>32</creditos>
+                <carrera>IF</carrera>
+                <curso>2</curso>
+        </asignatura>
+    </asignaturas>
+</datos_universidad>

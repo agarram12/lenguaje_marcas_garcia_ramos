@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:element name="ejercicio_03">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="puertaCerrada" type=""/>
+            <xs:element name="ventanaAbierta" type=""/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>

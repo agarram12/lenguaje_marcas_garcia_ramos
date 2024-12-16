@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ej Práctico 5</title>
+    <link rel="stylesheet" href="./ejpractico5.css">
+</head>
+<body>
+    <h1>Formulario 1: Datos personales</h1>
+    <form method="post">
+        <!-- dATOS PERSONALES -->
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre"><br>
+        <label for="apellido">Apellidos:</label><br>
+        <input type="text" id="apellido" name="apellido"><br>
+        <!-- VEHÍCULO -->
+        <p>¿Tienes vehículo propio?</p>
+        <input type="radio" id="vh1" name="vehículo" value="si">
+        <label for="vh1">Sí</label> <br>
+        <input type="radio" id="vh2" name="vehículo" value="si">
+        <label for="vh1">No</label>
+        <!-- LENGUAJES DE MARCAS -->
+        <p>Selecciona tus lenguajes de marcas favoritos:</p>
+        <input type="checkbox" id="lgm1" name="lenguaje" value="XML">
+        <label for="lgm1">XML</label><br>
+        <input type="checkbox" id="lgm2" name="lenguaje" value="HTML">
+        <label for="lgm1">HTML</label><br>
+        <input type="checkbox" id="lgm3" name="lenguaje" value="Markdown">
+        <label for="lgm1">Markdown</label> <br><br>
+        <!-- EMAIL -->
+        <label for="mail">Introduce tu email: </label>
+        <input type="email" id="mail" name="email">
+        <!-- RANGE APRENDER -->
+        <label for="ganas">¿Cuantas ganas tienes de aprender? </label>
+        <input type="range" id="ganas" name="ganas"> <br>
+        <!-- COLOR -->
+        <label for="color">Y tu color favorito: </label>
+        <input type="color" id="color" name="color"><br>
+        <!-- IMAGEN -->
+        <label for="imagen">Sube una imagen:</label> 
+        <input type=file name="imagen"> <br><br><br>
+        <!-- ENVIAR, RESETEAR E IMAGEN RESET -->
+        <input type="submit" id="enviar" name="aceptar"><br>
+        <input type="reset" id="reset" name="reset" value="Resetear valores"> <br><br><br>
+        <button type="reset" style="border: none; background: none; cursor: pointer;">
+            <img src="./foto_reset.jpg" alt="Reset" width="50" height="50">
+        </button>
+    </form>
+</body>
+</html>

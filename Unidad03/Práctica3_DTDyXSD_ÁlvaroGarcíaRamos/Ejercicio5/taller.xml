@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vehiculos xmlns:xs="http://www.w3.org/2001/XMLSchema" xs:noNamespaceSchemaLocation="./taller.xsd">
+    <vehiculo>
+        <marca>Seat</marca>
+        <modelo>Panda</modelo>
+        <f_fabricacion dia="12" mes="5" anio="2015"/>
+        <lugar_fabricacion pais="Alemania">
+            <localidad>Europa</localidad>
+        </lugar_fabricacion>
+        <unidades>200</unidades>
+    </vehiculo>
+</vehiculos>
