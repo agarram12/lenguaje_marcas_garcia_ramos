@@ -1,0 +1,70 @@
+body {
+    background-color: lightgray;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+ul.lista-1 li {
+    border: 4px dashed purple;
+    padding: 0.5em 3em 0.5em 3em;
+    margin-right: 1em;
+    background-color: rgb(91, 178, 91);
+    font-weight: bold;
+    color: purple;
+}
+
+ul.lista-2 {
+    margin-left: 45%;
+}
+
+ul.lista-2 li {
+    background-color: white;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding: 0.3em;
+}
+
+ul.lista-3 {
+    flex-flow: column;
+    border: 2px solid black;
+    width: 10%;
+    padding: 1em;
+    margin-left: 2px;
+}
+
+ul.lista-3 li {
+    background-color: white;
+    border: 2px solid black;
+    margin-bottom: 0.4em;
+    text-align: center;
+    padding: 0.5em;
+}
+
+ul.lista-4 {
+    margin-left: 45%;
+}
+
+ul.lista-4 li {
+    padding: 0.5em 2em 0.5em 2em;
+    text-align: center;
+    margin-right: 0.3em;
+    font-weight: bold;
+}
+
+.estilo1{
+    background-color: white;
+    color: rgb(32, 113, 179);
+}
+
+.estilo2{
+    background-color: rgb(32, 113, 179);
+    color: white;
+}
