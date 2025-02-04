@@ -1,0 +1,15 @@
+* {
+    font-family: sans-serif;
+}
+
+
+.calendario {
+    background-color: wheat;
+}
+.estiloCalendario {
+    font-weight: bold;
+    text-align: center;
+}
+table.calendario td {
+    padding: 2px;
+}
