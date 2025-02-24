@@ -2,10 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
-
 body {
+    min-height: 100vh;
     display: grid;
     /* Otra forma de hacerlo
     grid-template-columns: ;
@@ -16,9 +15,11 @@ body {
     "contenido menu"
     "pie pie"
     ;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 150px auto 75px;
 }
 
-header {
+header.titulo{
     grid-area: cabecera;
     align-items: center;
     background-color: #f4f4f4;
@@ -28,10 +29,10 @@ a {
     text-decoration: none;
     justify-content: space-between;
 }
-header img {
+header.titulo img {
     height: 150px;
 }
-header h1 {
+header.titulo h1 {
     font-family: 'Courier New';
     color: cornflowerblue;
     font-size: 8em;
@@ -42,28 +43,68 @@ main {
 }
 main p {
     color: white;
-    height: 90%;
+    padding-left: 2em;
 }
-main h2 {
+main h2, .estiloh3 {
     background-color: #f4f4f4;
     margin-top: 10px;
     color: cornflowerblue;
     font-family: 'Courier New', Courier, monospace;
     padding-left: 2em;
-    width: 85%;
     font-size: 4em;
 }
+
+main .estiloh3 {
+    font-size: 2em;
+}
 aside {
-    width: 10px;
+    background-color: cornflowerblue;
+}
+
+aside a {
     grid-area: menu;
+    flex-direction: column;
+}
+aside img{
+    width: 350px;
+    margin-left: 0.5em;
+    margin-bottom: 5px;
+    justify-self: end;
+    flex-grow: 1;
+    height: auto;
+    width: 100%; 
 }
 footer {
     display: flex;
     justify-content: space-around;
-    height: 75px;
     grid-area: pie;
     background-color: #f4f4f4;
     align-items: center;
     color: cornflowerblue;
     font-family: sans-serif;
+}
+
+table {
+    margin: 1em 0em 0em 4em;
+    font-family: sans-serif;
+    text-align: center;
+    border-collapse: collapse;
+}
+table th{
+    padding: 0.5em 6em 0.5em 6em;
+    background-color: white;
+    font-weight: bold;
+    border: 2px solid black;
+}
+
+table td {
+    padding: 0.5em 6em 0.5em 6em;
+    height: 2em;
+    background-color: wheat;  
+    border: 2px solid black; 
+}
+
+table tr.aumento td:hover {
+    font-size: 2em;
+    font-weight: bolder;
 }
