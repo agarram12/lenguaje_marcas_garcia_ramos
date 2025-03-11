@@ -1,7 +1,9 @@
 .activo {
     background-color: lightblue;
+    color: black;
 }
 
-.inactivo {
- color: lightgray;
+button {
+    background-color: rgb(240, 240, 240);
+    color: lightgray;
 }
