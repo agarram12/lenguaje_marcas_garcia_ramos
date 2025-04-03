@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego del Ahorcado</title>
+    <script defer src="./script.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div id="contenedor">
+        <div id="cabecera">
+            <h1>JUEGO DEL AHORCADO</h1>
+        </div>
+        <div id="palabras">
+            <input type="text" readonly>
+            <input type="text" readonly>
+            <input type="text" readonly>
+            <input type="text" readonly>
+            <input type="text" readonly>
+            <input type="text" readonly>
+            <input type="text" readonly>
+        </div>
+        <div id="botones"> 
+            <h2>LETRA</h2>
+            <input type="text" id="letraInput" maxlength="1">
+            <button id="comenzar">Comenzar</button>
+            <button id="comprobar" disabled>Comprobar</button>
+        </div>
+        <h1>Puntuaciones</h1>
+        <div id="puntuacion">
+            <p id="puntos">Puntuación actual: 0</p>    
+            <p id="ultimaPuntuacion">Puntuación última jugada: 0</p>    
+            <p id="puntuacionMax">Puntuación Máxima: 0</p>    
+            <p id="fallos">Num Fallos actuales: 0</p>    
+            <p>Num Fallos permitidos: 7</p>    
+            <p id="restantes">Palabras restantes: 20</p>
+        </div>
+    </div>
+</body>
+</html>

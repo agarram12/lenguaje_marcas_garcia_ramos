@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizzeria</title>
+    <title>Pizzería Trafalgar</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <script type="text/javascript" src="./script.js"></script>
+    <script type="text/javascript" src="script.js"></script>
     <style>
         footer {
             background-color: #ccc;
@@ -30,31 +30,94 @@
         .icon {
             margin-right: 10px;
         }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: auto;
+        }
+
+        label, input, select, textarea, button {
+            margin-bottom: 10px;
+            padding: 8px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: blueviolet;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: darkviolet;
+        }
     </style>
 </head>
 
 <body>
 
-    <!-- Cabecera -->
     <header>
         <a href="index.html">
-            <img src="./img/logo.png" alt="logo pizzeria">
+            <img src="img/logo.png" alt="logo pizzería">
         </a>
         <h1>Pizzería Trafalgar</h1>
     </header>
+
     <nav>
         <ul>
             <a href="#"><li>PRINCIPAL</li></a>
             <a href="#"><li>CARTA</li></a>
-            <a href="pedidos.html"><li>PEDIDOS</li></a>
+            <a href="./pedidos.html"><li>PEDIDOS</li></a>
         </ul>
     </nav>
-    <!-- Contenido -->
-    <main class="grid-pizzas">
-        <form action="#">
-            
+    file:///D:/workspaces/repositorios_daw/lenguajes_daw/u05/pizzeria.js.sol/realizado.html?direccion=jjeqweq&telefono=999999999&pizza=delahuerta
+    <main class="grid-container">
+        <form action="./realizado.html" method="GET" onsubmit="return validaForm()">
+            <label for="direccion">Dirección de entrega:</label>
+            <textarea id="direccion" name="direccion" rows="3"></textarea>
+            <div id="tel_cont">
+                <label for="telefono">Teléfono de contacto:</label>
+                <input type="tel" id="telefono" name="telefono">
+            </div>
+            <div>
+                <div id="pizza-container">
+                    <div class="pizza-elegida">
+                        <label for="pizza_pedido_01">Selecciona tu pizza:</label>
+                        <select id="pizza_01" name="pizza_01">
+                            <option value="">Elige tu pizza</option>
+                            <option value="barbacoa">Barbacoa (9,90 €)</option>
+                            <option value="carbonara">Carbonara (11,90 €)</option>
+                            <option value="cuatroquesos">Cuatro Quesos (8,90 €)</option>
+                            <option value="delahuerta">De la huerta(9,90 €)</option>
+                        </select>
+                    </div>
+                </div>
+                <label for="cantidad_01">
+            </div>
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" id="cantidad" name="cantidad" min="1" max="10" required>
+
+ <!--campo de texto largo para la direccion-->
+            <!--campo de texto para el telf-->
+            <!--campo de selección donde estén las pizzas disponibles-->
+            <!--boton para pedir-->
+
+            <!--
+                validar dirección - telf y al menos una pizza
+                elegir cantidad
+                calcular precio
+                a más pizzas al pedido
+            -->
+            <button type="submit">Hacer pedido</button>
+            <button type="reset">reset</button>
+            <button type="button" onclick="calcularPrecio()">calcular precio</button>
         </form>
+        <p id="precioTotal"></p>
     </main>
+
     <footer>
         <p>
             <i class="fas fa-map-marker-alt icon"></i>
