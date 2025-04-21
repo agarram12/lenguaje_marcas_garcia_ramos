@@ -15,3 +15,5 @@
     //movie[actor="Nicolas Cage"]/actor
 Actores que han trabajado con el actor Nicolas Cage en alguna película, excluido el propio Nicolas Cage
     //movie[acto]
+15?? peliculas que contengan el atributo year
+    //*[@year]
